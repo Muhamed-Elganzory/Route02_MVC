@@ -1,0 +1,16 @@
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/bin/Debug/net9.0/Route02.BLL.deps.json
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/bin/Debug/net9.0/Route02.BLL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/bin/Debug/net9.0/Route02.BLL.pdb
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/bin/Debug/net9.0/Route02.DAL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/bin/Debug/net9.0/Route02.DAL.pdb
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02.BLL.csproj.AssemblyReference.cache
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02.BLL.AssemblyInfoInputs.cache
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02.BLL.AssemblyInfo.cs
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02.BLL.csproj.CoreCompileInputs.cache
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02..48F3F902.Up2Date
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02.BLL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/refint/Route02.BLL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02.BLL.pdb
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/ref/Route02.BLL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.BLL/obj/Debug/net9.0/Route02.BLL.sourcelink.json

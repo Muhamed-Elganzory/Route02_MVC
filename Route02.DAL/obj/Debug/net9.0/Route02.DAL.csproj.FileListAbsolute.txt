@@ -1,0 +1,15 @@
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/bin/Debug/net9.0/Route02.DAL.deps.json
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/bin/Debug/net9.0/Route02.DAL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/bin/Debug/net9.0/Route02.DAL.pdb
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.csproj.AssemblyReference.cache
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.AssemblyInfoInputs.cache
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.AssemblyInfo.cs
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.csproj.CoreCompileInputs.cache
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/refint/Route02.DAL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.pdb
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/ref/Route02.DAL.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.sourcelink.json
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/bin/Debug/net9.0/Route02.DAL.runtimeconfig.json
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.DAL/obj/Debug/net9.0/Route02.DAL.genruntimeconfig.cache

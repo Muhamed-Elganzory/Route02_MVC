@@ -1,0 +1,116 @@
+@model IEnumerable<GetAllDepartmentsDto>
+
+@{
+    ViewData["Title"] = "Department";
+    /*var deptViewBag = ViewBag.Message.Name;
+    var deptViewData = ViewData["Message"] as GetAllDepartmentsDto;*/
+}
+
+@*<div class="alert alert-success mb-2">
+    @#1#ViewData["Message1"]#1#
+    @deptViewData?.Name
+</div>
+<div class="alert alert-primary">
+    @#1#ViewBag.Message2#1#
+    @deptViewBag
+</div>*@
+
+@* Temp Data *@
+@if (!string.IsNullOrWhiteSpace(TempData["Message"] as string))
+{
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1100">
+        <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto text-success">Success!!</strong>
+                <small>Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                @TempData["Message"]
+            </div>
+        </div>
+    </div>
+}
+
+<h1 class="my-3">All Departments</h1>
+<a class="btn btn-primary my-2" asp-controller="Department" asp-action="Create">Create Department</a>
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead class="text-center">
+            <tr>
+                <th>@Html.DisplayNameFor(c => c.Code)</th>
+                <th>@Html.DisplayNameFor(n => n.Name)</th>
+                <th>@Html.DisplayNameFor(d => d.Description)</th>
+                <th>@Html.DisplayNameFor(d => d.CreatedOn)</th>
+                <th>Details</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            @foreach (var department in Model)
+            {
+                <tr class="">
+                    <td>@Html.DisplayFor(c => department.Code)</td>
+                    <td>@Html.DisplayFor(n => department.Name)</td>
+                    <td>@Html.DisplayFor(d => department.Description)</td>
+                    <td>@Html.DisplayFor(c => department.CreatedOn)</td>
+                    
+                    @*<td>
+                        <a class="btn btn-primary" asp-controller="Department" asp-action="Details" asp-route-id="@department.DeptId">
+                            <i class="fas fa-eye"></i>
+                            Details
+                        </a>
+                    </td>
+                    <td>
+                        <a class="btn btn-success" asp-controller="Department" asp-action="Edit" asp-route-id="@department.DeptId">
+                            <i class="fas fa-edit"></i>
+                            Edit
+                        </a>
+                    </td>*@
+                    @* Partial View *@
+                    <partial name="_ButtonsPartialViews" model="department.DeptId"/>
+                    
+                    <td>
+                        <!--   
+                            <a class="btn btn-danger" asp-controller="Department" asp-action="Delete" asp-route-id="@department.DeptId">
+                                <i class="fas fa-trash"></i>
+                                Delete
+                            </a>
+                        -->
+
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeleteModal-@department.DeptId">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                        
+                        <div class="modal fade" id="DeleteModal-@department.DeptId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Department</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Are You Sure to Delete This Department?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <form asp-controller="Department" asp-action="Delete" asp-route-id="@department.DeptId" class="mt-4">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <input type="submit" value="Delete" class="btn btn-danger"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info mt-3">No Departments Found!</div>
+}
