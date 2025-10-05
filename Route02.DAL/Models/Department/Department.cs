@@ -13,5 +13,5 @@ public class Department: BaseEntity
 
     // Navigation Property
     [InverseProperty(nameof(Employee.Employee.EmployeeWorkDepartment))]
-    public ICollection <Employee.Employee> Employees { get; set; } = new HashSet<Employee.Employee>();
+    public virtual ICollection <Employee.Employee> Employees { get; set; } = new HashSet<Employee.Employee>();
 }

@@ -15,7 +15,7 @@ public class DepartmentMappingProfile: Profile
         CreateMap<DAL.Models.Department.Department, GetDepartmentByIdDto>();
         
         // Create - Add Department
-        CreateMap<AddDepartmentDto, DAL.Models.Department.Department>();
+        CreateMap<CreateDepartmentDto, DAL.Models.Department.Department>();
         
         // Update Department
         CreateMap<UpdateDepartmentDto, DAL.Models.Department.Department>();

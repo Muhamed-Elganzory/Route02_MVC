@@ -40,7 +40,7 @@ public static class DepartmentFactory
     }
     
     // Add a new department
-    public static DAL.Models.Department.Department ToAddDepartmentDto(this AddDepartmentDto departmentDtO)
+    public static DAL.Models.Department.Department ToAddDepartmentDto(this CreateDepartmentDto departmentDtO)
     {
         return new DAL.Models.Department.Department()
         {

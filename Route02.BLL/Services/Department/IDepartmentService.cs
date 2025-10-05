@@ -9,10 +9,10 @@ public interface IDepartmentService
     IEnumerable<GetAllDepartmentsDto> GetAllDepartments();
 
     // Get department by ID
-    GetDepartmentByIdDto? GetDepartmentById(int? id);
+    GetDepartmentByIdDto? GetDepartmentById(int id);
 
     // Add a new department
-    int AddDepartment(AddDepartmentDto department);
+    int AddDepartment(CreateDepartmentDto department);
 
     // Update an existing department
     int UpdateDepartment(UpdateDepartmentDto departmentDto);

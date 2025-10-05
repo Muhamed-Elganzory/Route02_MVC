@@ -19,8 +19,8 @@ public static class EmployeeFactory
             IsActive = employee.IsActive,
             Salary = employee.Salary,
             Email = employee.Email,
-            Gender = employee.Gender.ToString(),
-            EmployeeType = employee.EmployeeType.ToString()
+            Gender = employee.Gender,
+            EmployeeType = employee.EmployeeType
         };
     }
     
@@ -38,13 +38,13 @@ public static class EmployeeFactory
             Email = employee.Email,
             PhoneNumber = employee.PhoneNumber,
             HiringDate = employee.HiringDate,
-            EmpGender = employee.Gender.ToString(),
-            EmployeeType = employee.EmployeeType.ToString()
+            EmpGender = employee.Gender,
+            EmployeeType = employee.EmployeeType
         };
     }
     
     // Add a new employee
-    public static DAL.Models.Employee.Employee ToAddEmployeeDto(this AddEmployeeDto employee)
+    public static DAL.Models.Employee.Employee ToAddEmployeeDto(this CreateEmployeeDto employee)
     {
         return new DAL.Models.Employee.Employee()
         {

@@ -6,10 +6,10 @@ namespace Route02.DAL.DB.Context;
 
 public class ApplicationDbContext (DbContextOptions <ApplicationDbContext> options): DbContext (options)
 {
-    // (DbContextOptions <ApplicationDbContext> options): DbContext (options)
+    //
     /// The OnConfiguring method is commented out to use the connection string from Program.cs
     /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
+     {
          optionsBuilder.UseSqlServer("Server= localhost,1433; Database= Route02_MVC; User Id=sa;Password=YourStrong@Passw0rd; TrustServerCertificate=True;");
     }*/
     
@@ -25,6 +25,7 @@ public class ApplicationDbContext (DbContextOptions <ApplicationDbContext> optio
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        base.OnModelCreating(modelBuilder);
     }
     
     public DbSet<Department> Departments { get; set; } = null!;

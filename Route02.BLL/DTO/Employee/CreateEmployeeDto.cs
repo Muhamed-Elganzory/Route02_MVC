@@ -1,10 +1,10 @@
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 using Route02.DAL.Models.Employee.Enum;
 
 namespace Route02.BLL.DTO.Employee;
 
-public class AddEmployeeDto
+public class CreateEmployeeDto
 {
     [Required]
     [MaxLength(50, ErrorMessage = "Max length should be 50 character")]
@@ -42,4 +42,8 @@ public class AddEmployeeDto
     public int CreatedBy { get; set; } // UserId
     
     public int LastModificationBy { get; set; } // UserId
+
+    public int? DepartmentId { get; set; } // Department ID Represent Foreign Key
+
+    public IFormFile? Image { get; set; } // Attachment Image
 }

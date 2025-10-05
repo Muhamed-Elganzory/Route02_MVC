@@ -6,41 +6,45 @@ namespace Route02.DAL.Repositories.Shared;
 
 public class GenericRepository <TEntity> (ApplicationDbContext dbContext): IGenericRepository<TEntity> where TEntity : BaseEntity
 {
+    private readonly ApplicationDbContext _dbContext = dbContext;
+
     // Get all employees
     public IEnumerable<TEntity> GetAll (bool withTracking = false)
     {
         if (withTracking)
         {
-            return dbContext.Set<TEntity>().ToList();
+            return _dbContext.Set<TEntity>().Where(emp => emp.IsDeleted != true).ToList();
         }
         
-        return dbContext.Set<TEntity>().AsNoTracking().ToList();
+        return _dbContext.Set<TEntity>().Where(emp => emp.IsDeleted != true).AsNoTracking().ToList();
     }
     
     // Get employee by id
     public TEntity? GetById (int? id)
     {
-        return dbContext.Set<TEntity>().Find(id);
+        return _dbContext.Set<TEntity>().Find(id);
     }
 
     // Add employee
-    public int Add (TEntity entity)
+    public void Add (TEntity entity)
     {
-        dbContext.Set<TEntity>().Add(entity);
-        return dbContext.SaveChanges();
+        _dbContext.Set<TEntity>().Add(entity);
     }
 
     // Update employee
-    public int Update (TEntity entity)
+    public void Update (TEntity entity)
     {
-        dbContext.Set<TEntity>().Update(entity);
-        return dbContext.SaveChanges();
+        _dbContext.Set<TEntity>().Update(entity);
     }
 
     // Delete employee
-    public int Delete (TEntity entity)
+    public void Delete (TEntity entity)
     {
-        dbContext.Set<TEntity>().Remove(entity);
-        return dbContext.SaveChanges();
+        // Hard Delete
+        // _dbContext.Set<TEntity>().Remove(entity);
+
+        // Soft Delete
+        entity.IsDeleted = true;
+        _dbContext.Set<TEntity>().Update(entity);
     }
 }

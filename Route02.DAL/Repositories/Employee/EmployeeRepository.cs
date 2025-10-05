@@ -5,6 +5,8 @@ namespace Route02.DAL.Repositories.Employee;
 
 public class EmployeeRepository (ApplicationDbContext dbContext): GenericRepository<Models.Employee.Employee>(dbContext), IEmployeeRepository
 {
+    private readonly ApplicationDbContext _dbContext = dbContext;
+
     /*public EmployeeRepository(ApplicationDbContext dbContext) : base(dbContext)
     {
     }*/

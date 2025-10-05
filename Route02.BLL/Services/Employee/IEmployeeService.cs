@@ -8,10 +8,10 @@ public interface IEmployeeService
     IEnumerable <GetAllEmployeeDto> GetAllEmployees(bool withTracking);
     
     // Get employee by ID
-    GetEmployeeDetailsDto? GetEmployeeById (int? id);
+    GetEmployeeDetailsDto? GetEmployeeById (int id);
     
     // Add a new employee
-    int AddEmployee(AddEmployeeDto employeeDto);
+    int CreateEmployee(CreateEmployeeDto employeeDto);
     
     // Update an existing employee
     int UpdateEmployee(UpdateEmployeeDto employeeDto);

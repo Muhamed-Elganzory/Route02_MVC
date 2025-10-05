@@ -4,7 +4,19 @@
     ViewData["Title"] = "Details Employee";
 }
 
-<h1 class="my-5 w-75">Employee Details</h1>
+<h1 class="mt-5 w-75">Employee Details</h1>
+
+@if (string.IsNullOrEmpty(Model.ImageName))
+{
+    <img class="img-fluid rounded-circle w-25 py-4" src="~/Files/Images/defaultImageUser.png" alt="Default Image"/>
+}
+else
+{
+    <div>
+        <img class="img-fluid rounded-circle w-25 py-4" src="~/Files/Images/@Model.ImageName" alt="Image User"/>
+    </div>
+}
+
 <ul class="nav nav-tabs" id="employeeTabs" role="tablist">
     <li class="nav-item" role="presentation">
         <a class="nav-link active" id="general-tab" data-bs-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
@@ -38,6 +50,18 @@
                 <label class="form-label" asp-for="Age"></label>
                 <input asp-for="Age" class="form-control" readonly />
             </div>
+            <div class="form-group mb-3 col-6">
+                <label class="form-label" asp-for="DepartmentName"></label>
+                <input asp-for="DepartmentName" class="form-control" readonly />
+            </div>
+
+            @*<div class="form-group mb-3 col-6">
+                <label asp-for="DepartmentId" class="py-2"></label>
+                <select asp-for="DepartmentId" class="form-control" asp-items="Model.DepartmentName" readonly >
+                    <option value="" readonly >Choose Department</option>
+                </select>
+                <span asp-validation-for="DepartmentId" class="text-danger"></span>
+            </div>*@
             <div class="form-group mb-3 col-6">
                 <label class="form-label" asp-for="HiringDate"></label>
                 <input asp-for="HiringDate" class="form-control" readonly />

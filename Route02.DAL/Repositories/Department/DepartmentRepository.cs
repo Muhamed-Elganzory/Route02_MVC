@@ -5,5 +5,7 @@ namespace Route02.DAL.Repositories.Department;
 
 public class DepartmentRepository(ApplicationDbContext dbContext): GenericRepository<Models.Department.Department>(dbContext), IDepartmentRepository
 {
-    
+    private readonly ApplicationDbContext _dbContext = dbContext;
+
+    // Ask ClR=> fore Creating Object From  ApplicationDbContext
 }

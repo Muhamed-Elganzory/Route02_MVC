@@ -6,7 +6,10 @@ namespace Route02.BLL.DTO.Employee;
 public class UpdateEmployeeDto
 {
     public int Id { get; set; }
-    
+
+    [Required]
+    [MaxLength(50, ErrorMessage = "Max length should be 50 character")]
+    [MinLength(3, ErrorMessage = "Min length should be 3 characters")]
     public string Name { get; set; } = null!;
     
     [Range(22, 30)]
@@ -25,6 +28,7 @@ public class UpdateEmployeeDto
     public string? Email { get; set; }
     
     [Phone]
+    [Display(Name = "Phone Number")]
     public string? PhoneNumber { get; set; }
 
     public DateOnly HiringDate { get; set; }
@@ -38,4 +42,6 @@ public class UpdateEmployeeDto
     public int CreatedBy { get; set; } // UserId
     
     public int LastModificationBy { get; set; } // UserId
+
+    public int? DepartmentId { get; set; } // Department ID Represent Foreign Key
 }

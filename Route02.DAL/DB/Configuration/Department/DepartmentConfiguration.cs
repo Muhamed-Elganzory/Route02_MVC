@@ -9,6 +9,7 @@ public class DepartmentConfiguration: BaseEntityConfiguration <Models.Department
     {
         builder.HasKey(department => department.Id); // PK
         builder.Property(department => department.Id).UseIdentityColumn(); // Auto-increment
+
         builder.Property(department => department.Name).IsRequired().HasColumnType("nvarchar(20)");
         builder.Property(department => department.Code).IsRequired().HasColumnType("nvarchar(5)");
         builder.Property(department => department.Description).HasColumnType("nvarchar(max)");

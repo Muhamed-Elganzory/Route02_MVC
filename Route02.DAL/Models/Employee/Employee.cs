@@ -30,8 +30,10 @@ public class Employee: BaseEntity
     
     // Navigation Property
     [InverseProperty(nameof(Department.Department.Employees))]
-    public Department.Department? EmployeeWorkDepartment { get; set; }
+    public virtual Department.Department? EmployeeWorkDepartment { get; set; }
     
     // Foreign Key
     public int? FkDepartmentId { get; set; }
+
+    public string? ImageName { get; set; } // Attachment Image [Just Store Image Name]
 }

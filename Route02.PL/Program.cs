@@ -2,21 +2,26 @@ using Microsoft.EntityFrameworkCore;
 using Route02.BLL.Mapping;
 using Route02.BLL.Mapping.Department;
 using Route02.BLL.Mapping.Employee;
+using Route02.BLL.Services.AttachmentService;
+using Route02.BLL.Services.AttachmentService.Interface;
 using Route02.BLL.Services.Department;
 using Route02.BLL.Services.Employee;
 using Route02.DAL.DB.Context;
 using Route02.DAL.Models.Employee;
 using Route02.DAL.Repositories.Department;
 using Route02.DAL.Repositories.Employee;
+using Route02.DAL.Repositories.Interfaces;
+using Route02.DAL.Repositories.Unit;
 
 var builder = WebApplication.CreateBuilder(args);
 
-#region Configure Services
+#region Configure Services Dependency Injection
 
 // Add DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseLazyLoadingProxies();
 });
 
 // Add Repository
@@ -32,6 +37,13 @@ builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 // Service To Auto Mapper
 builder.Services.AddAutoMapper(employee => employee.AddProfile(new EmployeeMappingProfile()));
 builder.Services.AddAutoMapper(employee => employee.AddProfile(new DepartmentMappingProfile()));
+
+
+// Unit Of Work
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// Attachment Service
+builder.Services.AddScoped<IAttachmentService, AttachmentService>();
 
 #endregion
 

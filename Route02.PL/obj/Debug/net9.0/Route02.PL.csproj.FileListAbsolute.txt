@@ -7,12 +7,15 @@
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Route02.PL.runtimeconfig.json
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Route02.PL.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Route02.PL.pdb
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/AutoMapper.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Azure.Core.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Azure.Identity.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Castle.Core.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Microsoft.Data.SqlClient.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Proxies.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
@@ -70,6 +73,7 @@
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/Route02.PL.MvcApplicationPartsAssemblyInfo.cache
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/Route02.PL.RazorAssemblyInfo.cache
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/Route02.PL.RazorAssemblyInfo.cs
+/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/Route02.PL.sourcelink.json
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/rjimswa.dswa.cache.json
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
@@ -150,5 +154,3 @@
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/Route02.PL.pdb
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/Route02.PL.genruntimeconfig.cache
 /Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/ref/Route02.PL.dll
-/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/obj/Debug/net9.0/Route02.PL.sourcelink.json
-/Users/macbook/Desktop/Ful-Stack/2-Back End/7- MVC/Route_MVC_Project/Route02_MVC/Route02.PL/bin/Debug/net9.0/AutoMapper.dll

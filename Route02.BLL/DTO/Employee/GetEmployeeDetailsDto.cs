@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Route02.DAL.Models.Employee.Enum;
 
 namespace Route02.BLL.DTO.Employee;
@@ -10,8 +12,7 @@ public class GetEmployeeDetailsDto
     public string Name { get; set; } = null!;
     
     public int Age { get; set; }
-    
-    
+
     public string? Address { get; set; }
     
     [Display (Name = "Is-Active")]
@@ -35,10 +36,16 @@ public class GetEmployeeDetailsDto
     public int LastModificationBy { get; set; } // UserId
     
     [Display (Name = "Employee Gender")]
-    public string EmpGender { get; set; } = null!;
+    public Gender EmpGender { get; set; }
     
     public DateTime? LastModificationOn { get; set; } // Time of last modification
 
     [Display (Name = "Employee Type")]
-    public string? EmployeeType { get; set; } = null!;
+    public EmployeeType EmployeeType { get; set; }
+
+    public int? DepartmentId { get; set; } // Department ID
+
+    public string? DepartmentName { get; set; } // Department Name
+
+    public string? ImageName { get; set; } // Image Name
 }

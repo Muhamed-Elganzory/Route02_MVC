@@ -11,9 +11,9 @@ public class GetAllEmployeeDto
     
     public int Age { get; set; }
     
-    public string? Address { get; set; } = null!;
+    public string? Address { get; set; }
     
-    [Display (Name = "Is-Active")]
+    [Display (Name = "Is Active")]
     public bool IsActive { get; set; }
     
     [DataType(DataType.Currency)]
@@ -24,9 +24,13 @@ public class GetAllEmployeeDto
     
     // [Display (Name = "Employee Gender")]
     [Display (Name = "Gender")]
-    public string Gender { get; set; } = null!;
+    public Gender Gender { get; set; }
 
-    // [Display (Name = "Employee Type")]
-    [Display (Name = "Type")]
-    public string EmployeeType { get; set; } = null!;
+    [Display (Name = "Employee Type")]
+    public EmployeeType EmployeeType { get; set; }
+
+    [Display (Name = "Department")]
+    public int? DepartmentId { get; set; } // Department ID Represent Foreign Key
+
+    public string? DepartmentName { get; set; } // Department Name
 }

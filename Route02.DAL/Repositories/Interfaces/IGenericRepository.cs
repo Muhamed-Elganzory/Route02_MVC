@@ -11,11 +11,11 @@ public interface IGenericRepository<T> where T: BaseEntity
     T? GetById (int? id);
     
     // Add
-    int Add (T entity);
+    void Add (T entity);
     
     // Update
-    int Update (T entity);
+    void Update (T entity);
     
     // Delete
-    int Delete (T entity);
+    void Delete (T entity);
 }

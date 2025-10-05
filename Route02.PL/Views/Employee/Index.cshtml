@@ -1,10 +1,38 @@
 @model IEnumerable<Route02.BLL.DTO.Employee.GetAllEmployeeDto>
+
 @{
     ViewData["Title"] = "Employee";
 }
 
+@if (!string.IsNullOrWhiteSpace(TempData["Message"] as string))
+{
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1100">
+        <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto text-success">Success!!</strong>
+                <small>Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                @TempData["Message"]
+            </div>
+        </div>
+    </div>
+}
+
 <h1 class="my-3">All Employees</h1>
 <a class="btn btn-primary my-2" asp-controller="Employee" asp-action="Create">Create Employee</a>
+
+<div class="m-2">
+    <form asp-action="Index" method="get" class="row offset-2">
+        <div class="col-8">
+            <input class="form-control" type="text" name="EmployeeSearchName"  placeholder="Search Employee By Name" value="@Context.Request.Query["EmployeeSearchName"]" >
+        </div>
+        <div class="col-4">
+            <input type="submit" class="btn btn-outline-success" value="Search" >
+        </div>
+    </form>
+</div>
 
 @if (Model.Any())
 {
@@ -15,6 +43,7 @@
                 <th>@Html.DisplayNameFor(e => e.Email)</th>
                 <th>@Html.DisplayNameFor(e => e.EmployeeType)</th>
                 <th>@Html.DisplayNameFor(e => e.Age)</th>
+                <th>@Html.DisplayNameFor(e => e.DepartmentId)</th>
                 <th>@Html.DisplayNameFor(e => e.Salary)</th>
                 <th>@Html.DisplayNameFor(e => e.IsActive)</th>
                 <th>@Html.DisplayNameFor(e => e.Gender)</th>
@@ -31,6 +60,7 @@
                     <td>@employee.Email</td>
                     <td>@employee.EmployeeType</td>
                     <td>@employee.Age</td>
+                    <td>@employee.DepartmentName</td>
                     <td>@employee.Salary</td>
                     <td>
                         @if (employee.IsActive)
@@ -90,7 +120,5 @@
 }
 else
 {
-    <div class="alert alert-info mt-3">
-        <h2>No Employees Found !!</h2>
-    </div>
+    <div class="alert alert-info mt-3">No Employees Found!</div>
 }

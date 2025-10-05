@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Route02.BLL.DTO.Department;
 
-public class AddDepartmentDto
+public class CreateDepartmentDto
 {
     [Required (ErrorMessage = "Name Is Required")]
     public string Name { get; set; } = null!; // Human Resources

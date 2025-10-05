@@ -10,7 +10,7 @@ public class GetAllDepartmentsDto
     public string? Description { get; set; } // Optional description
     
     // From BaseEntity
-    public int DeptId { get; set; }
+    public int? DeptId { get; set; }
     
     public DateTime? CreatedOn { get; set; } // Time of creation
 }
